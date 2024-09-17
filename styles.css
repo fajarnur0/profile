@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 #navbar {
   background-color: var(--dark);
   position: fixed;
