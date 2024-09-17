@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Fajar Nurdiansyah, a front-end web enthusiast showcasing web design skills and projects.">
+    <meta name="keywords" content="Fajar Nurdiansyah, front-end developer, web design, JavaScript, HTML, CSS, portfolio, projects">
+    <meta name="author" content="Fajar Nurdiansyah">
+
     <title>Personal Portfolio</title>
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
@@ -26,6 +30,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- START HEADER -->
@@ -37,7 +43,7 @@
             width="30"
             alt="Fajar Icon"
           />
-          <h3>fajarnurdiansyah</h3>
+          <h1>fajarnurdiansyah</h1>
         </div>
         <button class="hamburgerBtn" type="button">
           <span></span>
@@ -57,268 +63,374 @@
     </header>
     <!-- END HEADER -->
 
-    <!-- START HOME -->
-    <section id="welcome-section">
-      <div class="welcome-container">
-        <div class="welcome-text">
-          <p>Hello!</p>
-          <h1><span style="color: white">I'm</span> Fajar Nurdiansyah</h1>
-          <h4>Front-end Web Enthusiast</h4>
-          <a
-            id="profile-link"
-            href="https://www.linkedin.com/in/fajar-nurdiansyah/"
-            target="_blank"
-            >Hire Me!</a
+    <!-- START MAIN -->
+    <main>
+      <!-- START HOME -->
+      <article id="welcome-section">
+        <div class="welcome-container">
+          <section
+            class="welcome-text"
+            data-aos="fade-right"
+            data-aos-duration="3000"
           >
-        </div>
-        <div class="welcome-image">
-          <img
-            src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/fajar.png"
-            alt="image-profile"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- END HOME -->
-
-    <!-- START ABOUT -->
-    <section id="about">
-      <div class="about-container">
-        <div class="about-image">
-          <img
-            src="https://yt3.googleusercontent.com/NC1kuI5GNWZ6rke36rRHarMG_1S0cEvmywQbco0SPL0AAMTvNcocaxOztWZxWCslazOGRAgp04A=s160-c-k-c0x00ffffff-no-rj"
-            alt="about-image"
-          />
-        </div>
-        <div class="about-text">
-          <h1>I'm Fajarnur</h1>
-          <h5>I'm a Front-end Web Enthusiast</h5>
-          <p>
-            An Informatics student at Siliwangi University. Has great enthusiasm
-            for website development technology as indicated by having created
-            several website-based projects.
-          </p>
-          <div class="biodata">
-            <p>
-              Linked In:
-              <a
-                href="https://www.linkedin.com/in/fajar-nurdiansyah/"
-                target="_blank"
-                >Fajar Nurdiansyah</a
-              >
-            </p>
-            <p>Email: fajarnurdiansyah004@gmail.com</p>
-            <p>Instagram: fajarn.ur</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END ABOUT -->
-
-    <!-- START SKILLS -->
-    <section id="skills">
-      <div class="skills-container">
-        <div class="skills-title">
-          <h1>My SKills</h1>
-          <p style="color: white">
-            Let's check up about my front-end web skill
-          </p>
-        </div>
-
-        <div class="skills-wrapper">
-          <div class="skillBox-container">
-            <div class="skill-box">
-              <img
-                src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
-                alt="html-icon"
-                width="70"
-              />
-              <p>HTML</p>
-              <p>I am able to create a website structure well using HTML</p>
-            </div>
-
-            <div class="skill-box">
-              <img
-                src="https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png"
-                alt="html-icon"
-                width="70"
-              />
-              <p>CSS</p>
-              <p>
-                I am able to implement an elegant and responsive website
-                appearance using CSS
-              </p>
-            </div>
-
-            <div class="skill-box">
-              <img
-                src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png"
-                alt="html-icon"
-                width="80"
-              />
-              <p>JavaScript</p>
-              <p>
-                I am able to make websites more interactive and dynamic using
-                JavaScript
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END SKILLS -->
-
-    <!-- START PROJECTS -->
-    <section id="projects">
-      <div class="projects-container">
-        <div class="projects-title">
-          <h1>These are some of my projects</h1>
-          <p style="color: white">
-            Let's check what I have made about the website!
-          </p>
-        </div>
-
-        <div class="project-tile">
-          <div class="img-wrap">
+            <p>Hello!</p>
+            <h1>
+              <span style="color: white">I'm</span>
+              <span id="welcome-name">Fajar Nurdiansyah</span>
+            </h1>
+            <h4><span id="identity"></span></h4>
+            <a
+              id="profile-link"
+              href="https://www.linkedin.com/in/fajar-nurdiansyah/"
+              target="_blank"
+              >Hire Me!</a
+            >
+          </section>
+          <section
+            class="welcome-image"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
             <img
-              src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png"
-              alt="vektor"
+              src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/fajar.png"
+              alt="image-profile"
             />
+          </section>
+        </div>
+      </article>
+      <!-- END HOME -->
+
+      <!-- START ABOUT -->
+      <article id="about">
+        <div class="about-container">
+          <section class="about-image" data-aos="zoom-in-down">
+            <img
+              src="https://yt3.googleusercontent.com/NC1kuI5GNWZ6rke36rRHarMG_1S0cEvmywQbco0SPL0AAMTvNcocaxOztWZxWCslazOGRAgp04A=s160-c-k-c0x00ffffff-no-rj"
+              alt="about-image"
+            />
+          </section>
+          <section class="about-text" data-aos="zoom-out-up">
+            <h1>I'm Fajarnur</h1>
+            <h5>I'm a Front-end Web Enthusiast</h5>
+            <p>
+              An Informatics student at Siliwangi University. Has great
+              enthusiasm for website development technology as indicated by
+              having created several website-based projects.
+            </p>
+            <div class="biodata">
+              <p>
+                Linked In:
+                <a
+                  href="https://www.linkedin.com/in/fajar-nurdiansyah/"
+                  target="_blank"
+                  >Fajar Nurdiansyah</a
+                >
+              </p>
+              <p>Email: fajarnurdiansyah004@gmail.com</p>
+              <p>Instagram: fajarn.ur</p>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- END ABOUT -->
+
+      <!-- START SKILLS -->
+      <article id="skills">
+        <div class="skills-container">
+          <section class="skills-title" data-aos="zoom-out">
+            <h1>My SKills</h1>
+            <p style="color: white">
+              Let's check up about my front-end web skill
+            </p>
+          </section>
+
+          <section
+            class="skills-wrapper"
+            data-aos="fade-up-right"
+            data-aos-duration="2000"
+          >
+            <div class="skillBox-container">
+              <div class="skill-box">
+                <img
+                  src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
+                  alt="html-icon"
+                  width="70"
+                />
+                <p>HTML</p>
+                <p>I am able to create a website structure well using HTML</p>
+              </div>
+
+              <div class="skill-box">
+                <img
+                  src="https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png"
+                  alt="css-icon"
+                  width="70"
+                />
+                <p>CSS</p>
+                <p>
+                  I am able to implement an elegant and responsive website
+                  appearance using CSS
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <img
+                  src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png"
+                  alt="js-icon"
+                  width="80"
+                />
+                <p>JavaScript</p>
+                <p>
+                  I am able to make websites more interactive and dynamic using
+                  JavaScript
+                </p>
+              </div>
+
+              <div class="skill-box">
+                <img
+                  src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg"
+                  alt="tailwind-icon"
+                  width="80"
+                />
+                <p>Tailwind CSS</p>
+                <p>I am able to build the website faster using Tailwind CSS.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- END SKILLS -->
+
+      <!-- START PROJECTS -->
+      <article id="projects">
+        <div class="projects-container">
+          <section class="projects-title" data-aos="zoom-out">
+            <h1>These are some of my projects</h1>
+            <p style="color: white">
+              Let's check what I have made about the website!
+            </p>
+          </section>
+
+          <section class="project-tile" data-aos="fade-down-right">
+            <div class="img-wrap">
+              <img
+                src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/1.png"
+                alt="vektor"
+              />
+              <a
+                href="https://fajarnur0.github.io/Sudut-Antara-Dua-Vektor/"
+                target="_blank"
+                >Preview (Click)</a
+              >
+            </div>
             <a
               href="https://fajarnur0.github.io/Sudut-Antara-Dua-Vektor/"
               target="_blank"
-              >Preview (Click)</a
+              class="title"
+              ><span>&lt;</span>Kalkulator Sudut Antara Dua Vektor<span
+                >/&gt</span
+              ></a
             >
-          </div>
-          <a
-            href="https://fajarnur0.github.io/Sudut-Antara-Dua-Vektor/"
-            target="_blank"
-            class="title"
-            ><span>&lt;</span>Kalkulator Sudut Antara Dua Vektor<span
-              >/&gt</span
-            ></a
-          >
-        </div>
+          </section>
 
-        <div class="project-tile">
-          <div class="img-wrap">
-            <img
-              src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/2.png"
-              alt="si-paud"
-              target="_blank"
-            />
+          <section class="project-tile" data-aos="fade-down-left">
+            <div class="img-wrap">
+              <img
+                src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/2.png"
+                alt="si-paud"
+                target="_blank"
+              />
+              <a
+                href="https://fajarnur0.github.io/Frontend-Sistem-Informasi-PAUD/"
+                target="_blank"
+                >Preview (Click)</a
+              >
+            </div>
             <a
               href="https://fajarnur0.github.io/Frontend-Sistem-Informasi-PAUD/"
               target="_blank"
-              >Preview (Click)</a
+              class="title"
+              ><span>&lt;</span>Website Penilaian Siswa PAUD<span>/&gt</span></a
             >
-          </div>
-          <a
-            href="https://fajarnur0.github.io/Frontend-Sistem-Informasi-PAUD/"
-            target="_blank"
-            class="title"
-            ><span>&lt;</span>Website Penilaian Siswa PAUD<span>/&gt</span></a
-          >
-        </div>
+          </section>
 
-        <div class="project-tile">
-          <div class="img-wrap">
-            <img
-              src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/4.png"
-              target="_blank"
-              alt="CitaSaji"
-            />
+          <section class="project-tile" data-aos="fade-down-right">
+            <div class="img-wrap">
+              <img
+                src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/4.png"
+                target="_blank"
+                alt="CitaSaji"
+              />
+              <a
+                href="https://www.figma.com/proto/nj4nwhsxTkQ1lyr5StFqvQ/CitaSaji---Startup?node-id=25-54&t=ala7ZJNIf4qNKUMH-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=25%3A54"
+                target="_blank"
+                >Preview (Click)</a
+              >
+            </div>
             <a
               href="https://www.figma.com/proto/nj4nwhsxTkQ1lyr5StFqvQ/CitaSaji---Startup?node-id=25-54&t=ala7ZJNIf4qNKUMH-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=25%3A54"
               target="_blank"
-              >Preview (Click)</a
+              class="title"
+              ><span>&lt;</span>CitaSaji - Mobile Web Design<span>/&gt</span></a
             >
-          </div>
-          <a
-            href="https://www.figma.com/proto/nj4nwhsxTkQ1lyr5StFqvQ/CitaSaji---Startup?node-id=25-54&t=ala7ZJNIf4qNKUMH-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=25%3A54"
-            target="_blank"
-            class="title"
-            ><span>&lt;</span>CitaSaji - Mobile Web Design<span>/&gt</span></a
-          >
-        </div>
+          </section>
 
-        <div class="project-tile">
-          <div class="img-wrap">
-            <img
-              src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/5.png"
+          <section class="project-tile" data-aos="fade-down-left">
+            <div class="img-wrap">
+              <img
+                src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/5.png"
+                target="_blank"
+                alt="Steganography"
+              />
+              <a href="https://fajarnur0.github.io/Steganography-PVD/"
+                >Preview (Click)</a
+              >
+            </div>
+            <a
+              href="https://fajarnur0.github.io/Steganography-PVD/"
               target="_blank"
-              alt="Steganography"
-            />
-            <a href="https://fajarnur0.github.io/Steganography-PVD/"
-              >Preview (Click)</a
+              class="title"
+              ><span>&lt;</span>Steganography For Message<span>/&gt</span></a
             >
-          </div>
-          <a
-            href="https://fajarnur0.github.io/Steganography-PVD/"
-            target="_blank"
-            class="title"
-            ><span>&lt;</span>Steganography For Message<span>/&gt</span></a
-          >
-        </div>
+          </section>
 
-        <div class="project-tile">
-          <div class="img-wrap">
-            <img
-              src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/6.png"
-              alt="Enkripsi-RC4"
-            />
+          <section class="project-tile" data-aos="fade-down-right">
+            <div class="img-wrap">
+              <img
+                src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/6.png"
+                alt="Enkripsi-RC4"
+              />
+              <a
+                href="https://fajarnur0.github.io/Aplikasi-Enkripsi-Algoritma-RC4/"
+                target="_blank"
+                >Preview (Click)</a
+              >
+            </div>
             <a
               href="https://fajarnur0.github.io/Aplikasi-Enkripsi-Algoritma-RC4/"
               target="_blank"
-              >Preview (Click)</a
+              class="title"
+              ><span>&lt;</span>Enkripsi Pesan Metode RC4<span>/&gt</span></a
             >
-          </div>
-          <a
-            href="https://fajarnur0.github.io/Aplikasi-Enkripsi-Algoritma-RC4/"
-            target="_blank"
-            class="title"
-            ><span>&lt;</span>Enkripsi Pesan Metode RC4<span>/&gt</span></a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- END PROJECTS -->
+          </section>
 
-    <!-- START CONTACT -->
-    <section id="contact">
-      <div class="contact-container">
-        <img
-          src="https://static.vecteezy.com/system/resources/thumbnails/010/872/287/small_2x/3d-businessman-presents-the-results-of-his-analysis-png.png"
-          alt="human-vektor"
-        />
-        <div class="contact-wrap">
-          <div class="contact-text">
-            <h1>Come on, get to know Fajar further!</h1>
-            <p>
-              Get to know me immediately via the following social media
-              platforms to establish interaction and collaboration.
-            </p>
-          </div>
-          <div class="contact-links">
+          <section class="project-tile" data-aos="fade-down-left">
+            <div class="img-wrap">
+              <img
+                src="https://fajarnur0.github.io/portfolio-tailwind-css/dist/img/portfolio/8.png"
+                alt="Landing-Page"
+              />
+              <a
+                href="https://fajarnur0.github.io/landingpage-tokosepatu/"
+                target="_blank"
+                >Preview (Click)</a
+              >
+            </div>
             <a
+              href="https://fajarnur0.github.io/landingpage-tokosepatu/"
               target="_blank"
-              href="https://www.linkedin.com/in/fajar-nurdiansyah/"
-              ><i class="fab fa-linkedin"></i>Linked In</a
+              class="title"
+              ><span>&lt;</span>Responsive Landing Page<span>/&gt</span></a
             >
-            <a target="_blank" href="https://www.instagram.com/fajarn.ur"
-              ><i class="fab fa-instagram"></i>Instagram</a
-            >
-            <a target="_blank" href="mailto:fajarnurdiansyah004@gmail.com"
-              ><i class="fa fa-envelope"></i>Gmail</a
-            >
-            <a target="_blank" href="https://github.com/fajarnur0"
-              ><i class="fab fa-github"></i>GitHub</a
-            >
-          </div>
+          </section>
         </div>
-      </div>
-    </section>
-    <!-- END CONTACT -->
+      </article>
+      <!-- END PROJECTS -->
+
+      <!-- START CONTACT -->
+      <article id="contact">
+        <div class="contact-container">
+          <section data-aos="zoom-in">
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/010/872/287/small_2x/3d-businessman-presents-the-results-of-his-analysis-png.png"
+              alt="human-vektor"
+            />
+          </section>
+          <section class="contact-wrap">
+            <div class="contact-text" data-aos="fade-right">
+              <h1>Come on, get to know Fajar further!</h1>
+              <p>
+                Get to know me immediately via the following social media
+                platforms to establish interaction and collaboration.
+              </p>
+            </div>
+            <div class="contact-links" data-aos="fade-left">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/fajar-nurdiansyah/"
+                ><i class="fab fa-linkedin"></i>Linked In</a
+              >
+              <a target="_blank" href="https://www.instagram.com/fajarn.ur"
+                ><i class="fab fa-instagram"></i>Instagram</a
+              >
+              <a target="_blank" href="mailto:fajarnurdiansyah004@gmail.com"
+                ><i class="fa fa-envelope"></i>Gmail</a
+              >
+              <a target="_blank" href="https://github.com/fajarnur0"
+                ><i class="fab fa-github"></i>GitHub</a
+              >
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- END CONTACT -->
+
+      <!-- ASIDE START -->
+      <aside id="aside" class="translateX-full">
+        <button id="aside-button" data-aos="fade-left" data-aos-duration="3000">
+          <i class="fa fa-angle-left"></i>
+        </button>
+        <div class="aside-container">
+          <section class="aside-image">
+            <img
+              src="https://fajarnur0.github.io/portfolio-tailwind-css/blogs/img/fajar.jpg"
+              alt="profile"
+            />
+          </section>
+
+          <section class="aside-text">
+            <div id="aside-bio">
+              <h4>Biodata</h4>
+              <ul>
+                <li>Nama : Fajar Nurdiansyah</li>
+                <li>Asal : Kabupaten Pangandaran</li>
+                <li>Status : Mahasiswa</li>
+                <li>Prodi : Informatika</li>
+                <li>Instansi : Universitas Siliwangi</li>
+              </ul>
+            </div>
+            <div id="aside-blog">
+              <h4>Blog</h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://fajarnur0.github.io/portfolio-tailwind-css/blogs/cerpen.html"
+                    target="_blank"
+                    >Cerpen Sunda "Ngapung"</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://fajarnur0.github.io/portfolio-tailwind-css/blogs/resensi.html"
+                    target="_blank"
+                    >Resensi Buku Sherlock Holmes</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://fajarnur0.github.io/portfolio-tailwind-css/blogs/frontend.html"
+                    target="_blank"
+                    >Apa itu Front-end?</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </aside>
+      <!-- ASIDE END -->
+    </main>
+    <!-- END MAIN -->
 
     <!-- FOOTER -->
     <footer>
@@ -328,7 +440,30 @@
         <span style="color: #6948ff">Vanila CSS.</span>
       </div>
     </footer>
+    <!-- JAVASCRIPT -->
+    <script type="module" src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-    <script src="script.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#identity", {
+        strings: [
+          "Front-end Web Enthusiast",
+          "Web Designer",
+          "IT Student",
+          "Like Web Programming",
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+        backDelay: 1000,
+      });
+    </script>
   </body>
 </html>
