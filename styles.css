@@ -130,6 +130,7 @@ nav ul li a:hover {
 #welcome-section .welcome-text {
   padding-inline: 1rem;
   width: 100%;
+  animation: fadein-left 2s ease-in-out;
 }
 
 .welcome-text p:first-child {
@@ -145,6 +146,7 @@ nav ul li a:hover {
 }
 
 .welcome-text h4 {
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
@@ -174,6 +176,7 @@ nav ul li a:hover {
   width: 100%;
   padding-inline: 1rem;
   text-align: center;
+  animation: fadein-right 2s ease-in-out;
 }
 
 .welcome-image img {
@@ -587,6 +590,10 @@ nav ul li a:hover {
     color: var(--dark);
   }
 
+  .welcome-text h4 {
+    font-size: 1.2rem;
+  }
+
   .aside-container img {
     width: 100px;
   }
@@ -629,10 +636,6 @@ nav ul li a:hover {
 
   .welcome-text h1 {
     font-size: 3rem;
-  }
-
-  .welcome-text h4 {
-    font-size: 1.5rem;
   }
 
   .welcome-text a {
@@ -700,6 +703,7 @@ nav ul li a:hover {
     transform: translateX(0);
   }
 }
+
 @keyframes navbar-out {
   0% {
     transform: translateX(0);
@@ -733,5 +737,27 @@ nav ul li a:hover {
   }
   100% {
     transform: translateX(-102.5%);
+  }
+}
+
+@keyframes fadein-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadein-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
