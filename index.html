@@ -76,6 +76,13 @@
               <span style="color: white">I'm</span>
               <span id="welcome-name">Fajar Nurdiansyah</span>
             </h1>
+            <h4 id="identities">
+              <p>Front-End Web Enthusiast</p>
+              <p>Web Designer</p>
+              <p>IT Student</p>
+              <p>Like Web Programming</p>
+              <p>Freelancer</p>
+            </h4>
             <h4><span id="identity"></span></h4>
             <a
               id="profile-link"
@@ -448,13 +455,8 @@
 
     <!-- Setup and start animation! -->
     <script>
-      var typed = new Typed("#identity", {
-        strings: [
-          "Front-end Web Enthusiast",
-          "Web Designer",
-          "IT Student",
-          "Like Web Programming",
-        ],
+      let typed = new Typed("#identity", {
+        stringsElement: "#identities",
         typeSpeed: 50,
         backSpeed: 25,
         loop: true,
